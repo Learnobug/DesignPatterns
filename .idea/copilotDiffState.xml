@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/README.md" />
+              <option name="originalContent" value="# DesignPatterns&#10;" />
+              <option name="updatedContent" value="# DesignPatterns&#10;&#10;This repository contains concise examples of three creational design patterns implemented in Java: Factory, Builder, and Singleton. Each section below explains the intent, when to use the pattern, and points to the example files included in this project.&#10;&#10;## Factory Pattern&#10;&#10;- Intent: Encapsulate object creation so callers depend on an abstract type while a factory decides the concrete implementation.&#10;- When to use: When a class can’t anticipate the class of objects it must create, or you want to centralize creation logic.&#10;&#10;Example in this repo:&#10;- Files: `src/FactoryDesignPattern/Factory.java`, `src/FactoryDesignPattern/CarFactory.java`, `src/FactoryDesignPattern/ShipFactory.java`, `src/FactoryDesignPattern/Product.java`, `src/FactoryDesignPattern/Car.java`, `src/FactoryDesignPattern/Ship.java`&#10;- Usage: The `Factory` (or `CarFactory`/`ShipFactory`) returns a `Product` interface implementation based on input; look at `src/FactoryDesignPattern/Client.java` for a usage example.&#10;&#10;## Builder Pattern&#10;&#10;- Intent: Separate construction of a complex object from its representation so the same construction process can create different representations.&#10;- When to use: When an object has many optional parameters or needs step-by-step construction.&#10;&#10;Example in this repo:&#10;- Files: `src/Builder/HouseBuilder.java`, `src/Builder/StoneHouseBuilder.java`, `src/Builder/WoodHouseBuilder.java`, `src/Builder/Director.java`, `src/Builder/Client.java`, `src/Builder/House.java`&#10;- Usage: `Director` coordinates a `HouseBuilder` to create different kinds of `House` objects (stone/wood). See `src/Builder/Client.java` for how builders are constructed and used.&#10;&#10;## Singleton Pattern&#10;&#10;- Intent: Ensure a class has only one instance and provide a global point of access to it.&#10;- When to use: When a single shared resource or coordinator is needed (configuration, connection manager, etc.).&#10;&#10;Example in this repo:&#10;- Files: `src/Singleton/single.java`, `src/Singleton/Client.java`&#10;- Notes: The `single` class in `src/Singleton` shows a singleton-style implementation. Review `Client.java` to see how the singleton is accessed and used.&#10;&#10;## Notes and recommendations&#10;&#10;- Prefer the Factory pattern to centralize creation and decouple callers from concrete types.&#10;- Use the Builder pattern to improve readability and immutability for complex objects.&#10;- For Singletons, prefer simple and thread-safe implementations (enum-based or properly synchronized lazy initialization) depending on your needs.&#10;&#10;---&#10;&#10;(Each pattern folder contains a small `Client.java` demonstrating usage.)" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
