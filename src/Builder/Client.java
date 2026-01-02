@@ -2,6 +2,7 @@ package Builder;
 
 
 // Constrcution of Object is step by step
+// Immutable object creation (No Setter methods) (only muttable state during object creation  to provide immutability after object creation)
 // Director Builder Class help to construct object with or without optional parameters and also ordering of steps
 // Builder class remove the telescoping constructor anti pattern
 // Builder class enable object create validation before object creation
